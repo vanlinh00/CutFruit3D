@@ -2640,7 +2640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 430d3998a5d017046b9d9854b5a881cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0
+  Speed: -3.69
 --- !u!1 &1691177690384863
 GameObject:
   m_ObjectHideFlags: 0
@@ -14238,44 +14238,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fracterdknife: {fileID: 1491046159946551, guid: 7532cada2e26a2c4c9255779d612ef5d, type: 3}
---- !u!114 &5723235660567087496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5723235660567088542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88bd59fc764c9fd4f94e4acc9a4d66f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cucuparticale: {fileID: 1607785587461232, guid: f781a2ab685846540b5ac6af4efe42f3, type: 3}
-  tamatoparticale: {fileID: 1980745597899599, guid: ad9fd0a29cf94624285cee7cec606a8b, type: 3}
-  brizalparticale: {fileID: 1553381826592486, guid: 42b61b209b57d774b8c77d0e82690e8b, type: 3}
-  mashroomparticale: {fileID: 1607785587461232, guid: f781a2ab685846540b5ac6af4efe42f3, type: 3}
-  bombparticale: {fileID: 0}
-  rb: {fileID: 0}
-  totalscore: 100
-  lastTime: 0
-  isShowBoard: 0
---- !u!114 &5723235660567087503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5723235660567088551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac784829269eb50458df4abf2e78bbb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseCliked: 0
-  speed: 25
-  knife: {fileID: 5723235660567088288}
-  knfe: {fileID: 5723235660567088551}
-  facturedknife: {fileID: 5723235660567088423}
 --- !u!23 &5723235660567088233
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15351,8 +15313,8 @@ GameObject:
   - component: {fileID: 5723235660567089122}
   - component: {fileID: 5723235660567088255}
   - component: {fileID: 5723235660567088675}
-  - component: {fileID: 5723235660567087496}
   - component: {fileID: 5723235660567088999}
+  - component: {fileID: 5723235660567088550}
   m_Layer: 9
   m_Name: Cube
   m_TagString: Player
@@ -15488,6 +15450,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &5723235660567088550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5723235660567088542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a4bb5a4df79bf942bd4ed2652f102ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5723235660567088551
 GameObject:
   m_ObjectHideFlags: 0
@@ -15498,8 +15472,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5723235660567088288}
   - component: {fileID: 5723235660567088688}
-  - component: {fileID: 5723235660567087503}
   - component: {fileID: 5723235660567088915}
+  - component: {fileID: 5723235660567088552}
   m_Layer: 9
   m_Name: KnifeRoot
   m_TagString: Player
@@ -15507,6 +15481,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5723235660567088552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5723235660567088551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371188a00fffa66438da91224920e4e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5723235660567088560
 GameObject:
   m_ObjectHideFlags: 0

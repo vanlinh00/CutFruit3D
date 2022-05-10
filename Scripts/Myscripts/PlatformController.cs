@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class PlatformController : MonoBehaviour
 {
+    
     // Start is called before the first frame update
-    public float Speed=3.0f;
+    public float Speed=-3.0f;
     void Start()
     {
-        
+   
+
+       
     }
 
     // Update is called once per frame

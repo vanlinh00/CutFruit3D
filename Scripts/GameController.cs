@@ -21,11 +21,11 @@ public class GameController : MonoBehaviour
 		Debug.Log(other.gameObject.tag + other.gameObject.name);
 		if (other.gameObject.tag == "cucu")
 		{
-			GameObject.FindObjectOfType<GameManager>().score++;
-			GameObject.FindObjectOfType<GameManager>().fill1.fillAmount = (float)GameObject.FindObjectOfType<GameManager>().score / this.totalscore;
-			other.gameObject.GetComponent<Rigidbody>().isKinematic = false;
-			this.rb.AddForce(0f, 0f, -0.5f);
-			GameObject.Instantiate<GameObject>(this.cucuparticale, base.transform.position, base.transform.rotation);
+		//	GameObject.FindObjectOfType<GameManager>().score++;
+		//	GameObject.FindObjectOfType<GameManager>().fill1.fillAmount = (float)GameObject.FindObjectOfType<GameManager>().score / this.totalscore;
+	//	other.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+	//	   this.rb.AddForce(0f, 0f, -0.5f);
+		//	GameObject.Instantiate<GameObject>(this.cucuparticale, base.transform.position, base.transform.rotation);
 		}
 		if (other.gameObject.tag == "tamoto")
 		{
