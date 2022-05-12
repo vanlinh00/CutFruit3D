@@ -20,19 +20,24 @@ public class BarrierController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag=="Player")
+        if (other.gameObject.tag == "Player")
         {
+            Debug.Log("dao vao player");
             KnifeFractured.active = true;
             other.gameObject.active = false;
-            for(int i=0;i< KnifeFractured.transform.childCount;i++ )
+            for (int i = 0; i < KnifeFractured.transform.childCount; i++)
 
-            {  
-                if(KnifeFractured.transform.GetChild(i).GetComponent<Rigidbody>())
+            {
+                if (KnifeFractured.transform.GetChild(i).GetComponent<Rigidbody>())
                 {
                     KnifeFractured.transform.GetChild(i).GetComponent<Rigidbody>().isKinematic = false;
-                }    
-          
-            }    
-        }    
+                }
+
+            }
+        }
     }
+   
+   
+      
+   
 }

@@ -17,13 +17,10 @@ public class KnifeController : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag=="cucu")
-        {
+        if(collision.gameObject.tag =="cucu")
+       {
             collision.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         }    
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        
-    }
+ 
 }

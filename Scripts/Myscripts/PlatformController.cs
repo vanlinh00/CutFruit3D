@@ -6,7 +6,7 @@ public class PlatformController : MonoBehaviour
 {
     
     // Start is called before the first frame update
-    public float Speed=-3.0f;
+    public float Speed=-5.0f;
     void Start()
     {
    
