@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update
-     
+    [SerializeField]
+    GameObject KnifeFractured;
     void Start()
     {
         
@@ -26,4 +27,5 @@ public class PlayerController : MonoBehaviour
         }    
         
     }
+    
 }
