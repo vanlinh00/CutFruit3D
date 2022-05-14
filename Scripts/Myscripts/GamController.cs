@@ -7,17 +7,17 @@ public class GamController : MonoBehaviour
     //  public ArrayList ListFruit = new ArrayList();
     public GameObject[] _listFruit = new GameObject[5];
     public GameObject[] _listInstanceGameSetUp = new GameObject[4];
-    GameObject _pflatForm1;
-    GameObject _pflatForm2;
+
 
     float checkPoz = 0f;
     void Start()
     {
-        //    CreateLengtPiece(3);
-        _pflatForm1 = CreateOnePiece(new Vector3(0f,0f,0f));
-        _pflatForm2 = CreateOnePiece(new Vector3(0f, 0f, 110f));
+     
 
+        // wait for seconds
+        //  StartCoroutine(ExampleCoroutine());
 
+        base.InvokeRepeating("CreateOnePiece", 0.1f, 16.5f);
 
 
     }
@@ -25,19 +25,20 @@ public class GamController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        checkPoz = _pflatForm2.transform.position.z;
-        if (checkPoz == 80.86089f)
-        {  
-            /*
-            if(_pflatForm1.active==true)
-            {
-                Destroy(_pflatForm1);
-            }
-            Destroy(_pflatForm2);
-            */
-            _pflatForm2 = CreateOnePiece(new Vector3(0f, 0f, 110f));
-
+        // checkPoz = _pflatForm2.transform.position.z;
+        //   if (checkPoz == 80.86089f)
+        //  {  
+        /*
+        if(_pflatForm1.active==true)
+        {
+            Destroy(_pflatForm1);
         }
+        Destroy(_pflatForm2);
+        */
+   
+          //  _pflatForm2 = CreateOnePiece(new Vector3(0f, 0f, 110f));
+
+    //    }
 
     }
     void CreateLengtPiece(int countPicce)
@@ -72,11 +73,11 @@ public class GamController : MonoBehaviour
        }    
     }
 
-    GameObject CreateOnePiece(Vector3 newPosition)
+    GameObject CreateOnePiece()
     {
       //  Vector3 newRotation = new Vector3(0, 0, 0);
         GameObject _instanceGameSetup = Instantiate(Resources.Load("level/GameSetup", typeof(GameObject))) as GameObject;
-        _instanceGameSetup.transform.position = newPosition;
+    ;
         _instanceGameSetup.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
         for (int i = 0; i < _instanceGameSetup.transform.childCount; i++)
         {
@@ -89,5 +90,23 @@ public class GamController : MonoBehaviour
             }
         }
         return _instanceGameSetup;
-    }    
+    }
+    IEnumerator ExampleCoroutine()
+    {
+      
+            yield return new WaitForSeconds(17);
+        
+         
+     }
+
+
+
+
+    public void vehicledelay()
+    {
+        // t?o object  m?i
+       // GameObject.Instantiate<GameObject>(this.floar, new Vector3(0f, 0f, 125f), Quaternion.identity);
+    }
+
+
 }
